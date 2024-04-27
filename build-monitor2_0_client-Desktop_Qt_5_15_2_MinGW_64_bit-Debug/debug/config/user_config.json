@@ -1,0 +1,37 @@
+{
+    "last_account": "lmd",
+    "users_history": [
+        {
+            "account": "cfz1",
+            "password": "cfz1"
+        },
+        {
+            "account": "cfz2",
+            "password": "cfz2"
+        },
+        {
+            "account": "cloud",
+            "password": "123456"
+        },
+        {
+            "account": "cyp",
+            "password": "cyp"
+        },
+        {
+            "account": "dc",
+            "password": "dc"
+        },
+        {
+            "account": "jack_lin",
+            "password": "123456"
+        },
+        {
+            "account": "lmd",
+            "password": "lmd"
+        },
+        {
+            "account": "陈林豪",
+            "password": "123456"
+        }
+    ]
+}

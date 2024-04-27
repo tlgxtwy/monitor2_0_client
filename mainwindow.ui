@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QTreeView" name="treeView">
+       <property name="styleSheet">
+        <string notr="true">QTreeView{
+	font-size:21px;
+}
+QTreeView::item{
+    height:45px
+}
+QHeaderView::section{font:18px;height:28px;}</string>
+       </property>
+      </widget>
+      <widget class="my_stacked_widget" name="st_widget" native="true"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="account_switches"/>
+   <addaction name="action"/>
+   <addaction name="sys_setting"/>
+  </widget>
+  <action name="sys_setting">
+   <property name="icon">
+    <iconset resource="resources/res.qrc">
+     <normaloff>:/icon/icon/sysset.png</normaloff>:/icon/icon/sysset.png</iconset>
+   </property>
+   <property name="text">
+    <string>系统设置</string>
+   </property>
+   <property name="toolTip">
+    <string>用于配置系统需要的内容</string>
+   </property>
+  </action>
+  <action name="account_switches">
+   <property name="text">
+    <string>切换账号</string>
+   </property>
+   <property name="toolTip">
+    <string>用于切换当前账户</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="resources/res.qrc">
+     <normaloff>:/icon/icon/err_analysis.png</normaloff>:/icon/icon/err_analysis.png</iconset>
+   </property>
+   <property name="text">
+    <string>错误代码</string>
+   </property>
+   <property name="toolTip">
+    <string>用于错误代码解析</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>my_stacked_widget</class>
+   <extends>QWidget</extends>
+   <header location="global">my_stacked_widget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

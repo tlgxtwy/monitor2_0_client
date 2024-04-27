@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>icon/run.ico</file>
+        <file>icon/shelf.ico</file>
+        <file>icon/syssetting.ico</file>
+        <file>icon/general_situation.ico</file>
+        <file>icon/home.ico</file>
+        <file>icon/inverter.ico</file>
+        <file>icon/monitor.ico</file>
+        <file>icon/sensor.ico</file>
+        <file>icon/device_list.ico</file>
+        <file>icon/close_bt.ico</file>
+        <file>icon/calendar.ico</file>
+        <file>icon/add.ico</file>
+        <file>icon/cutdown.ico</file>
+        <file>icon/tcp_server.ico</file>
+        <file>icon/start36x36.png</file>
+        <file>icon/stop36x36.png</file>
+        <file>icon/log.png</file>
+        <file>icon/err_analysis.png</file>
+        <file>icon/sysset.png</file>
+        <file>icon/gray.png</file>
+        <file>icon/red.png</file>
+        <file>icon/green.png</file>
+        <file>icon/pwd_dis.png</file>
+        <file>icon/pwd_en.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>
